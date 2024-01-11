@@ -1,0 +1,14 @@
+Client
+ 
+(bodyParser.json()
+ 
+node-rest
+ 
+const mongoose = require('mongoose')
+ 
+imageName
+ 
+imageName
+ 
+version
+ 
