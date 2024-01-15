@@ -1,3 +1,20 @@
+    environment:
+      - PYTHONUNBUFFERED=1
+ 
+value
+ 
+name
+ 
+'queue'
+ 
+queue
+ 
+     self.conn = psycopg2.connect(DSN)
+ 
+ DSN = "dbname=email_sender user=postgres password=password host=db"
+ 
+       db_host
+ 
 ENV PYTHONUNBUFFERED 1
  
 image: python:3.6

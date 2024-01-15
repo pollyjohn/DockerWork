@@ -40,6 +40,8 @@ services:
     depends_on:
       - db
       - queue
+    environment:
+      - DB_NAME=email_sender
   queue:
     image: redis:3.2
     networks:
@@ -49,8 +51,6 @@ services:
     volumes:
       - ./worker:/worker
     working_dir: /worker
-    environment:
-      - PYTHONUNBUFFERED=1
     command: worker.py
     networks:
       - fila
